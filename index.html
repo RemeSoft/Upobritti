@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpoBritti</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responseive.css">
+</head>
+
+<body>
+    <main>
+        <div id="sidebar">
+            <section id="sidebar_branding">
+                <img id="branding_image" src="./img/logo.png" alt="logo">
+                <h3>Headway<br> Engineering Institute</h3>
+            </section>
+            <section>
+                <h1 id="sidebar_title">উপবৃত্তির ফরম<br> পূরণ করুন অনলাইনে ।</h1>
+                <p id="sidebar_desc">এখন খুব সহজেই আপনি আপনার উপবৃত্তির ফরমটি পূরণ করে ডাউনলোড করে নিতে পারেন।</p>
+                <button id="sidebar_button">Continue</button>
+            </section>
+            <section id="sidebar_cradit">
+                <div id="credit_holder">
+                    <p id="auto_type"></p>
+                </div>
+            </section>
+        </div>
+        <form>
+            <div id="welcome">
+                <button id="welcome_button" type="button">Continue</button>
+            </div>
+            <div id="instruction" class="go_right">
+                <button id="instruction_button" type="button">Continue</button>
+            </div>
+            <div id="inputs" class="go_right">
+                <div id="inputs_area">
+                    <section>
+                        <div class="section_heading">
+                            <h3 class="section_title">ব্যক্তিগত তথ্য</h3>
+                            <p class="section_desc">ফরমে চাওয়া প্রতিটি তথ্য দিয়ে পরবর্তী ধাপে যান।</p>
+                        </div>
+                        <div class="all_inputs">
+                            <div class="input_group">
+                                <label for="name_bangla">শিক্ষার্থীর নাম (বাংলা)</label>
+                                <input id="name_bangla" name="name_bangla" type="text" class="input" spellcheck="false"
+                                    required>
+                            </div>
+                            <div class="input_group">
+                                <label for="name_english">শিক্ষার্থীর নাম (ইংরেজি)</label>
+                                <input id="name_english" name="name_english" type="text" class="input"
+                                    spellcheck="false" required>
+                            </div>
+                            <div class="input_group">
+                                <label for="birth_certificate">জন্ম সনদের নাম্বার</label>
+                                <input id="birth_certificate" name="birth_certificate" type="number" class="input"
+                                    required>
+                            </div>
+                            <div class="input_group">
+                                <label for="birth_date">জন্ম তারিখ</label>
+                                <input id="birth_date" name="birth_date" type="date" class="input" required>
+                            </div>
+                            <div class="input_group">
+                                <label for="sex">লিঙ্গ</label>
+                                <select id="sex" name="sex" class="input" required>
+                                    <option value="পুরুষ">পুরুষ</option>
+                                    <option value="মহিলা">মহিলা</option>
+                                    <option value="অন্যান্য">অন্যান্য</option>
+                                </select>
+                            </div>
+                            <div class="input_group">
+                                <label for="father_name_bangla">পিতার নাম (বাংলা)</label>
+                                <input id="father_name_bangla" name="father_name_bangla" type="text" class="input"
+                                    spellcheck="false" required>
+                            </div>
+                            <div class="input_group">
+                                <label for="father_name_english">পিতার নাম (ইংরেজি)</label>
+                                <input id="father_name_english" name="father_name_english" type="text" class="input"
+                                    spellcheck="false" required>
+                            </div>
+                            <div class="input_group">
+                                <label for="father_nid">পিতার এন আই ডি</label>
+                                <input id="father_nid" name="father_nid" type="number" class="input" required>
+                            </div>
+                            <div class="input_group">
+                                <label for="father_birthdate">পিতার জন্ম তারিখ</label>
+                                <input id="father_birthdate" name="father_birthdate" type="date" class="input" required>
+                            </div>
+                            <div class="input_group">
+                                <label for="father_mobile">পিতার মোবাইল নম্বর</label>
+                                <input id="father_mobile" name="father_mobile" type="number" class="input" required>
+                            </div>
+                            <div class="input_group">
+                                <label for="marital_status">বৈবাহিক অবস্থা</label>
+                                <select id="marital_status" name="marital_status" class="input">
+                                    <option value="বিবাহিত">বিবাহিত</option>
+                                    <option value="অবিবাহিত">অবিবাহিত</option>
+                                </select>
+                            </div>
+                            <div class="input_group">
+                                <label for="mother_name_bangla">মাতার নাম (বাংলা )</label>
+                                <input id="mother_name_bangla" name="mother_name_bangla" type="text" class="input"
+                                    spellcheck="false" required>
+                            </div>
+                            <div class="input_group">
+                                <label for="mother_name_english">মাতার নাম (ইংরেজি)</label>
+                                <input id="mother_name_english" name="mother_name_english" type="text" class="input"
+                                    spellcheck="false" required>
+                            </div>
+                            <div class="input_group">
+                                <label for="mother_nid">মাতার এন আই ডি</label>
+                                <input id="mother_nid" name="mother_nid" type="number" class="input" required>
+                            </div>
+                            <div class="input_group">
+                                <label for="mother_birthdate">মাতার জন্ম তারিখ</label>
+                                <input id="mother_birthdate" name="mother_birthdate" type="date" class="input" required>
+                            </div>
+                            <div class="input_group">
+                                <label for="mother_mobile">মাতার মোবাইল নম্বর</label>
+                                <input id="mother_mobile" name="mother_mobile" type="number" class="input" required>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="section_heading">
+                            <h3 class="section_title">স্থায়ী ঠিকানা</h3>
+                            <p class="section_desc">ফরমে চাওয়া প্রতিটি তথ্য দিয়ে পরবর্তী ধাপে যান।</p>
+                        </div>
+                        <div class="all_inputs">
+                            <div class="input_group">
+                                <label for="permanent_division">বিভাগ</label>
+                                <select id="permanent_division" name="permanent_division" class="input" required>
+                                    <option value="">বিভাগ সিলেক্ট করুন</option>
+                                </select>
+                            </div>
+                            <div class="input_group">
+                                <label for="permanent_district">জেলা</label>
+                                <select id="permanent_district" name="permanent_district" class="input" required>
+                                    <option value="">জেলা সিলেক্ট করুন</option>
+                                </select>
+                            </div>
+                            <div class="input_group">
+                                <label for="permanent_upozila">উপজেলা</label>
+                                <select id="permanent_upozila" name="permanent_upozila" class="input" required>
+                                    <option value="">উপজেলা সিলেক্ট করুন</option>
+                                </select>
+                            </div>
+                            <div class="input_group">
+                                <label for="permanent_union">পৌরসভা/ইউনিয়ন/সিটি কর্পোরেশন</label>
+                                <input id="permanent_union" name="permanent_union" type="text" class="input"
+                                    spellcheck="false" required>
+                            </div>
+                            <div class="input_group">
+                                <label for="permanent_postcode">পোস্ট কোড</label>
+                                <input id="permanent_postcode" name="permanent_postcode" type="number" class="input"
+                                    required>
+                            </div>
+                            <div class="input_group">
+                                <label for="permanent_location">ঠিকানা / গ্রাম</label>
+                                <input id="permanent_location" name="permanent_location" type="text" class="input"
+                                    spellcheck="false" required>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="section_heading">
+                            <h3 class="section_title">বর্তমান ঠিকানা</h3>
+                            <p class="section_desc">ফরমে চাওয়া প্রতিটি তথ্য দিয়ে পরবর্তী ধাপে যান।</p>
+                        </div>
+                        <div class="all_inputs">
+                            <div class="input_group">
+                                <label for="present_division">বিভাগ</label>
+                                <select id="present_division" name="present_division" class="input" required>
+                                    <option value="">বিভাগ সিলেক্ট করুন</option>
+                                </select>
+                            </div>
+                            <div class="input_group">
+                                <label for="present_district">জেলা</label>
+                                <select id="present_district" name="present_district" class="input" required>
+                                    <option value="">জেলা সিলেক্ট করুন</option>
+                                </select>
+                            </div>
+                            <div class="input_group">
+                                <label for="present_upozila">উপজেলা</label>
+                                <select id="present_upozila" name="present_upozila" class="input" required>
+                                    <option value="">উপজেলা সিলেক্ট করুন</option>
+                                </select>
+                            </div>
+                            <div class="input_group">
+                                <label for="present_union">পৌরসভা/ইউনিয়ন/সিটি কর্পোরেশন</label>
+                                <input id="present_union" name="present_union" type="text" class="input"
+                                    spellcheck="false" required>
+                            </div>
+                            <div class="input_group">
+                                <label for="present_postcode">পোস্ট কোড</label>
+                                <input id="present_postcode" name="present_postcode" type="number" class="input"
+                                    required>
+                            </div>
+                            <div class="input_group">
+                                <label for="present_location">ঠিকানা / গ্রাম</label>
+                                <input id="present_location" name="present_location" type="text" class="input"
+                                    spellcheck="false" required>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="section_heading">
+                            <h3 class="section_title">পূর্ববর্তী শিক্ষা তথ্য</h3>
+                            <p class="section_desc">ফরমে চাওয়া প্রতিটি তথ্য দিয়ে পরবর্তী ধাপে যান।</p>
+                        </div>
+                        <div class="all_inputs">
+                            <div class="input_group">
+                                <label for="previous_edu_division">বিভাগ</label>
+                                <select id="previous_edu_division" name="previous_edu_division" class="input" required>
+                                    <option value="">বিভাগ সিলেক্ট করুন</option>
+                                </select>
+                            </div>
+                            <div class="input_group">
+                                <label for="previous_edu_district">জেলা</label>
+                                <select id="previous_edu_district" name="previous_edu_district" class="input" required>
+                                    <option value="">জেলা সিলেক্ট করুন</option>
+                                </select>
+                            </div>
+                            <div class="input_group">
+                                <label for="previous_edu_upozila">উপজেলা</label>
+                                <select id="previous_edu_upozila" name="previous_edu_upozila" class="input" required>
+                                    <option value="">উপজেলা সিলেক্ট করুন</option>
+                                </select>
+                            </div>
+                            <div class="input_group">
+                                <label for="previous_institute_name">প্রতিষ্ঠানের নাম</label>
+                                <input id="previous_institute_name" name="previous_institute_name" type="text"
+                                    class="input" spellcheck="false" required>
+                            </div>
+                            <div class="input_group">
+                                <label for="passing_year">উত্তীন হওয়ার বছর</label>
+                                <input id="passing_year" name="passing_year" type="number" class="input" required>
+                            </div>
+                            <div class="input_group">
+                                <label for="previous_edu_board">বোর্ড</label>
+                                <select id="previous_edu_board" name="previous_edu_board" class="input" required>
+                                    <option value="সিলেট">সিলেট</option>
+                                    <option value="ঢাকা">ঢাকা</option>
+                                    <option value="চট্টগ্রাম">চট্টগ্রাম</option>
+                                    <option value="রাজশাহী">রাজশাহী</option>
+                                    <option value="যশোর">যশোর</option>
+                                    <option value="কুমিল্লা">কুমিল্লা</option>
+                                    <option value="বরিশাল">বরিশাল</option>
+                                    <option value="দিনাজপুর">দিনাজপুর</option>
+                                    <option value="বাংলাদেশ কারিগরি শিক্ষা বোর্ড">
+                                        বাংলাদেশ কারিগরি শিক্ষা বোর্ড
+                                    </option>
+                                    <option value="বাংলাদেশ মাদ্রাসা শিক্ষা বোর্ড">
+                                        বাংলাদেশ মাদ্রাসা শিক্ষা বোর্ড
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="input_group">
+                                <label for="previous_edu_technology">টেকনোলজি/ট্রেড</label>
+                                <select id="previous_edu_technology" name="previous_edu_technology" class="input"
+                                    required>
+                                    <option value="">টেকনোলজি সিলেক্ট করুন</option>
+                                    <option value="কম্পিউটার টেকনোলজি">কম্পিউটার টেকনোলজি</option>
+                                    <option value="সিভিল টেকনোলজি">সিভিল টেকনোলজি</option>
+                                    <option value="ইলেকট্রনিক্স টেকনোলজি">ইলেকট্রনিক্স টেকনোলজি</option>
+                                    <option value="আর্কিটেকচার টেকনোলজি">আর্কিটেকচার টেকনোলজি</option>
+                                    <option value="others">অন্যান্য</option>
+                                </select>
+                            </div>
+                            <div class="input_group">
+                                <label for="previous_exam">পূর্ববর্তী পরীক্ষার নাম</label>
+                                <select id="previous_exam" name="previous_exam" class="input" required>
+                                    <option value="এস.এস.সি" selected>এস.এস.সি</option>
+                                    <option value="এইচ.এস.সি">এইচ.এস.সি</option>
+                                </select>
+                            </div>
+                            <div class="input_group">
+                                <label for="previous_roll">রোল</label>
+                                <input id="previous_roll" name="previous_roll" type="number" class="input" required>
+                            </div>
+                            <div class="input_group">
+                                <label for="previous_result">ফলাফল (জিপিএ)</label>
+                                <input id="previous_result" name="previous_result" type="number" class="input" required>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="section_heading">
+                            <h3 class="section_title">বর্তমান শিক্ষা তথ্য</h3>
+                            <p class="section_desc">ফরমে চাওয়া প্রতিটি তথ্য দিয়ে পরবর্তী ধাপে যান।</p>
+                        </div>
+                        <div class="all_inputs">
+                            <div class="input_group">
+                                <label for="present_edu_division">বিভাগ</label>
+                                <select id="present_edu_division" name="present_edu_division" class="input" required>
+                                    <option value="">বিভাগ সিলেক্ট করুন</option>
+                                </select>
+                            </div>
+                            <div class="input_group">
+                                <label for="present_edu_district">জেলা</label>
+                                <select id="present_edu_district" name="present_edu_district" class="input" required>
+                                    <option value="">জেলা সিলেক্ট করুন</option>
+                                </select>
+                            </div>
+                            <div class="input_group">
+                                <label for="present_edu_upozila">উপজেলা</label>
+                                <select id="present_edu_upozila" name="present_edu_upozila" class="input" required>
+                                    <option value="">উপজেলা সিলেক্ট করুন</option>
+                                </select>
+                            </div>
+                            <div class="input_group">
+                                <label for="present_institute_name">প্রতিষ্ঠানের নাম</label>
+                                <input id="present_institute_name" name="present_institute_name" type="text"
+                                    class="input" spellcheck="false" required>
+                            </div>
+                            <div class="input_group">
+                                <label for="semister">শ্রেনী</label>
+                                <select id="semister" name="semister" class="input" required>
+                                    <option value="">শ্রেনী সিলেক্ট করুন</option>
+                                    <option value="প্রথম সেমিস্টার">প্রথম সেমিস্টার</option>
+                                    <option value="দ্বিতীয় সেমিস্টার">দ্বিতীয় সেমিস্টার</option>
+                                    <option value="তৃতীয় সেমিস্টার">তৃতীয় সেমিস্টার</option>
+                                    <option value="চতুর্থ সেমিস্টার">চতুর্থ সেমিস্টার</option>
+                                    <option value="পঞ্চম সেমিস্টার">পঞ্চম সেমিস্টার</option>
+                                    <option value="ষষ্ঠ সেমিস্টার">ষষ্ঠ সেমিস্টার</option>
+                                    <option value="সপ্তম সেমিস্টার">সপ্তম সেমিস্টার</option>
+                                    <option value="অষ্টম সেমিস্টার">অষ্টম সেমিস্টার</option>
+                                </select>
+                            </div>
+                            <div class="input_group">
+                                <label for="present_edu_technology">টেকনোলজি/ট্রেড</label>
+                                <select id="present_edu_technology" name="present_edu_technology" class="input"
+                                    required>
+                                    <option value="">টেকনোলজি সিলেক্ট করুন</option>
+                                    <option value="কম্পিউটার টেকনোলজি">কম্পিউটার টেকনোলজি</option>
+                                    <option value="সিভিল টেকনোলজি">সিভিল টেকনোলজি</option>
+                                    <option value="ইলেকট্রনিক্স টেকনোলজি">ইলেকট্রনিক্স টেকনোলজি</option>
+                                    <option value="আর্কিটেকচার টেকনোলজি">আর্কিটেকচার টেকনোলজি</option>
+                                    <option value="others">অন্যান্য</option>
+                                </select>
+                            </div>
+                            <div class="input_group">
+                                <label for="present_shift">শিফট এবং গ্রুপ</label>
+                                <input id="present_shift" name="present_shift" type="text" class="input"
+                                    spellcheck="false">
+                            </div>
+                            <div class="input_group">
+                                <label for="present_roll">রোল</label>
+                                <input id="present_roll" name="present_roll" type="number" class="input"
+                                    spellcheck="false" required>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="section_heading">
+                            <h3 class="section_title">অভিভাবকের তথ্য</h3>
+                            <p class="section_desc">ফরমে চাওয়া প্রতিটি তথ্য দিয়ে পরবর্তী ধাপে যান।</p>
+                        </div>
+                        <div class="all_inputs">
+                            <div class="input_group">
+                                <label for="guardian">সম্পর্ক নির্বাচন করুন</label>
+                                <select id="guardian" name="guardian" class="input" required>
+                                    <option value="">সম্পর্ক নির্বাচন করুন</option>
+                                    <option value="পিতা">পিতা</option>
+                                    <option value="মাতা">মাতা</option>
+                                    <option value="ভাই">ভাই</option>
+                                    <option value="বোন">বোন</option>
+                                    <option value="অন্যান্য">অন্যান্য</option>
+                                </select>
+                            </div>
+                            <div class="input_group">
+                                <label for="guardian_name_bangla">নাম (বাংলা)</label>
+                                <input id="guardian_name_bangla" name="guardian_name_bangla" type="text" class="input"
+                                    spellcheck="false" required>
+                            </div>
+                            <div class="input_group">
+                                <label for="guardian_name_english">নাম (ইংরেজি)</label>
+                                <input id="guardian_name_english" name="guardian_name_english" type="text" class="input"
+                                    spellcheck="false" required>
+                            </div>
+                            <div class="input_group">
+                                <label for="guardian_nid">অভিভাবকের এনআইডি</label>
+                                <input id="guardian_nid" name="guardian_nid" type="number" class="input" required>
+                            </div>
+                            <div class="input_group">
+                                <label for="guardian_birthdate">জন্ম তারিখ</label>
+                                <input id="guardian_birthdate" name="guardian_birthdate" type="date" class="input"
+                                    required>
+                            </div>
+                            <div class="input_group">
+                                <label for="guardian_mobile">মোবাইল নম্বর</label>
+                                <input id="guardian_mobile" name="guardian_mobile" type="number" class="input" required>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="section_heading">
+                            <h3 class="section_title">পেমেন্ট বিবরণ</h3>
+                            <p class="section_desc">ফরমে চাওয়া প্রতিটি তথ্য দিয়ে পরবর্তী ধাপে যান।</p>
+                        </div>
+                        <div class="all_inputs">
+                            <div class="input_group">
+                                <label for="payment_method">মোবাইল ব্যাংকিং সেবাদাকারী প্রতিষ্টান</label>
+                                <select id="payment_method" name="payment_method" class="input" required>
+                                    <option value="বিকাশ&check; / নগদ">বিকাশ</option>
+                                    <option value="বিকাশ / নগদ&check;" selected>নগদ</option>
+                                </select>
+                            </div>
+                            <div class="input_group">
+                                <label for="payment_reciver_nid">অ্যাকাউন্টধারীর এনআইডি নম্বর</label>
+                                <input id="payment_reciver_nid" name="payment_reciver_nid" type="number" class="input"
+                                    required>
+                            </div>
+                            <div class="input_group">
+                                <label for="account_number">অ্যাকাউন্ট নম্বর</label>
+                                <input id="account_number" name="account_number" type="number" class="input" required>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div id="buttons_area">
+                    <button type="button" class="button">Back</button>
+                    <button type="button" class="button" id="button_download">Download</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="./js/vandor/typed.umd.js"></script>
+    <script src="./js/vandor/html2pdf.bundle.min.js"></script>
+    <script type="module" src="./js/script.js"></script>
+</body>
+
+</html>

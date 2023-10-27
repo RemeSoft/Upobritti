@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../pages/page.css">
+</head>
+
+<body>
+    <h1 id="title">
+        কারিগরি শিক্ষা অধিদপ্তর এর স্টাইপেন্ড এমআইএস সফটওয়্যারে<br />
+        উপবৃত্তির জন্য শিক্ষার্থী আবেদন ফরম (SAF)
+    </h1>
+    <table id="table_one">
+        <col style="width:20%">
+        <col style="width:30%">
+        <col style="width:20%">
+        <col style="width:30%">
+        <tr>
+            <th colspan=" 5">ব্যক্তিগত তথ্য</th>
+        </tr>
+        <tr>
+            <td>শিক্ষার্থীর নাম (বাংলা)</td>
+            <td id="name_bangla" colspan="4" lang="bn"></td>
+        </tr>
+        <tr>
+            <td>শিক্ষার্থীর নাম (ইংরেজি)</td>
+            <td id="name_english" colspan="4"></td>
+        </tr>
+        <tr>
+            <td>জন্ম সনদের নাম্বার</td>
+            <td id="birth_certificate" colspan="4"></td>
+        </tr>
+        <tr>
+            <td>জন্ম তারিখ</td>
+            <td id="birth_date" colspan="4"></td>
+        </tr>
+        <tr>
+            <td>লিঙ্গ</td>
+            <td id="sex" lang="bn"></td>
+            <td>বৈবাহিক অবস্থা</td>
+            <td id="marital_status" lang="bn"></td>
+        </tr>
+        <tr>
+            <td>পিতার নাম (বাংলা)</td>
+            <td id="father_name_bangla" lang="bn"></td>
+            <td>মাতার নাম (বাংলা )</td>
+            <td id="mother_name_bangla" lang="bn"></td>
+        </tr>
+        <tr>
+            <td>পিতার নাম (ইংরেজি)</td>
+            <td id="father_name_english"></td>
+            <td>মাতার নাম (ইংরেজি)</td>
+            <td id="mother_name_english"></td>
+        </tr>
+        <tr>
+            <td>পিতার এন আই ডি</td>
+            <td id="father_nid"></td>
+            <td>মাতার এন আই ডি</td>
+            <td id="mother_nid"></td>
+        </tr>
+        <tr>
+            <td>পিতার জন্ম তারিখ</td>
+            <td id="father_birthdate"></td>
+            <td>মাতার জন্ম তারিখ</td>
+            <td id="mother_birthdate"></td>
+        </tr>
+        <tr>
+            <td>পিতার মোবাইল নম্বর</td>
+            <td id="father_mobile"></td>
+            <td>মাতার মোবাইল নম্বর</td>
+            <td id="mother_mobile"></td>
+        </tr>
+        <tr>
+            <th colspan="2">স্থায়ী ঠিকানা</th>
+            <th colspan="2">বর্তমান ঠিকানা</th>
+        </tr>
+        <tr>
+            <td>বিভাগ</td>
+            <td id="permanent_division" lang="bn"></td>
+            <td>বিভাগ</td>
+            <td id="present_division" lang="bn"></td>
+        </tr>
+        <tr>
+            <td>জেলা</td>
+            <td id="permanent_district" lang="bn"></td>
+            <td>জেলা</td>
+            <td id="present_district" lang="bn"></td>
+        </tr>
+        <tr>
+            <td>উপজেলা</td>
+            <td id="permanent_upozila" lang="bn"></td>
+            <td>উপজেলা</td>
+            <td id="present_upozila" lang="bn"></td>
+        </tr>
+        <tr>
+            <td>পৌরসভা/ইউনিয়ন/সিটি কর্পোরেশন</td>
+            <td id="permanent_union" lang="bn"></td>
+            <td>পৌরসভা/ইউনিয়ন/সিটি কর্পোরেশন</td>
+            <td id="present_union" lang="bn"></td>
+        </tr>
+        <tr>
+            <td>পোস্ট কোড</td>
+            <td id="permanent_postcode"></td>
+            <td>পোস্ট কোড</td>
+            <td id="present_postcode"></td>
+        </tr>
+        <tr>
+            <td>ঠিকানা / গ্রাম</td>
+            <td id="permanent_location" lang="bn"></td>
+            <td>ঠিকানা / গ্রাম</td>
+            <td id="present_location" lang="bn"></td>
+        </tr>
+        <tr>
+            <th colspan="2" style="width: 50%;">পূর্ববর্তী শিক্ষা তথ্য</th>
+            <th colspan="2" style="width: 50%;">বর্তমান শিক্ষা তথ্য</th>
+        </tr>
+        <tr>
+            <td>বিভাগ</td>
+            <td id="previous_edu_division" lang="bn"></td>
+            <td>বিভাগ</td>
+            <td id="present_edu_division" lang="bn"></td>
+        </tr>
+        <tr>
+            <td>জেলা</td>
+            <td id="previous_edu_district" lang="bn"></td>
+            <td>জেলা</td>
+            <td id="present_edu_district" lang="bn"></td>
+        </tr>
+        <tr>
+            <td>উপজেলা</td>
+            <td id="previous_edu_upozila" lang="bn"></td>
+            <td>উপজেলা</td>
+            <td id="present_edu_upozila" lang="bn"></td>
+        </tr>
+        <tr>
+            <td>প্রতিষ্ঠানের নাম</td>
+            <td id="previous_institute_name" lang="bn"></td>
+            <td>প্রতিষ্ঠানের নাম</td>
+            <td id="present_institute_name" lang="bn"></td>
+        </tr>
+        <tr>
+            <td>উত্তীন হওয়ার বছর</td>
+            <td id="passing_year" lang="bn"></td>
+            <td>শ্রেনী</td>
+            <td id="semister" lang="bn"></td>
+        </tr>
+        <tr>
+            <td>বোর্ড</td>
+            <td id="previous_edu_board" lang="bn"></td>
+            <td>টেকনোলজি/ট্রেড</td>
+            <td id="present_edu_technology" lang="bn"></td>
+        </tr>
+        <tr>
+            <td>টেকনোলজি/ট্রেড</td>
+            <td id="previous_edu_technology" lang="bn"></td>
+            <td>শিফট এবং গ্রুপ</td>
+            <td id="present_shift" lang="bn"></td>
+        </tr>
+        <tr>
+            <td>পূর্ববর্তী পরীক্ষার নাম</td>
+            <td id="previous_exam" lang="bn"></td>
+            <td>রোল</td>
+            <td id="present_roll"></td>
+        </tr>
+        <tr>
+            <td>রোল</td>
+            <td id="previous_roll"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ফলাফল (জিপিএ)</td>
+            <td id="previous_result"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>উপস্থিতির হার (প্রতিষ্ঠান কর্তৃক পূরণীয়)</td>
+            <td><b>------%</b></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <table id="table_two">
+        <col style="width:20%">
+        <col style="width:30%">
+        <col style="width:33%">
+        <col style="width:17%">
+        <tr>
+            <th colspan="2">অভিভাবকের তথ্য</th>
+            <th colspan="2">যোগ্যতার শর্ত এবং সংযুক্তি</th>
+        </tr>
+        <tr>
+            <td>সম্পর্ক নির্বাচন করুন</td>
+            <td id="guardian" lang="bn"></td>
+            <td>পড়াশুনা খরচ বহন করবে কে?</td>
+            <td id="edu_cost_bearer"></td>
+        </tr>
+        <tr>
+            <td>নাম (বাংলা)</td>
+            <td id="guardian_name_bangla" lang="bn"></td>
+            <td>আবেদনকারী কি বাংলাদেশের কোনও ক্ষুদ্র নৃ-গোষ্ঠিীর
+                অন্তুর্ভুক্ত?</td>
+            <td id="minority" lang="bn"></td>
+        </tr>
+        <tr>
+            <td>নাম (ইংরেজি)</td>
+            <td id="guardian_name_english" lang="bn"></td>
+            <td>আবেদনকারী কি মুক্তিযোদ্ধা পরিবারের সন্তান (মুক্তিযোদ্ধা
+                প্রজন্ম)?</td>
+            <td id="Freedom_fighters" lang="bn"></td>
+        </tr>
+        <tr>
+            <td>অভিভাবকের এনআইডি</td>
+            <td id="guardian_nid" lang="bn"></td>
+            <td>আবেদনকারী কি অন্য কোন উৎস হতে বৃত্তি/উপবৃত্তি পান?</td>
+            <td id="another_stipand_source" lang="bn"></td>
+        </tr>
+        <tr>
+            <td>জন্ম তারিখ</td>
+            <td id="guardian_birthdate"></td>
+            <td>আবেদনকারীর কি কোন শারীরিক প্রতিবন্ধকতা <br>আছে?</td>
+            <td id="physical_disability" lang="bn"></td>
+        </tr>
+        <tr>
+            <td>মোবাইল নম্বর</td>
+            <td id="guardian_mobile"></td>
+            <td>প্রযোজ্য ক্ষেত্রে সংশ্লিষ্ট সনদ বা প্রয়োজনীয় সনদ সংযুক্ত করুন</td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>
