@@ -85,6 +85,11 @@ button {
     z-index: 1;
 }
 
+#others_previous_edu_technology,
+#others_present_edu_technology {
+    display: none;
+}
+
 /* -----------------------------------
             Main Area
 ------------------------------------- */

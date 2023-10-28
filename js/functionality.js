@@ -129,12 +129,39 @@ function waringRemover() {
     })
 }
 
+// function others others department handler
+function showOthers() {
+    const inputs = document.querySelectorAll("select");
+    inputs.forEach(element => {
+        element.addEventListener("change", (e) => {
+            if (e.target.value === "others") {
+                const id = `others_${e.target.id}`;
+                document.getElementById(id).style.display = "block";
+            }
+        })
+    });
+}
 
+function othersHandler() {
+    const prefix = "others_";
+    const othersArray = ["previous_edu_technology", "present_edu_technology"];
+    othersArray.forEach(id => {
+        const element = document.getElementById(prefix + id);
+        const select = document.getElementById(id);
+        const option = select.querySelector("option[value='others']");
+        element.addEventListener("input", (e) => {
+            option.value = e.target.value;
+            option.text = e.target.value;
+        })
+    })
+}
 
 export {
     startAutoType,
     loadLocation,
     downloadPDF,
     isEmpty,
-    waringRemover
+    waringRemover,
+    showOthers,
+    othersHandler
 }

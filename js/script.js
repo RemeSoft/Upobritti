@@ -22,6 +22,8 @@ const buttonDownload = document.querySelector("#button_download");
 functionality.waringRemover();
 functionality.startAutoType("#auto_type", auto_type_content);
 functionality.loadLocation(location.place, location.placeID);
+functionality.showOthers();
+functionality.othersHandler();
 
 // buttons actions
 sidebarButton.addEventListener("click", () => {
@@ -36,7 +38,7 @@ instructionButton.addEventListener("click", () => {
     inputs.classList.remove("go_right");
 })
 buttonDownload.addEventListener("click", () => {
-    if (functionality.isEmpty(form, true)) {
+    if (functionality.isEmpty(form, false)) {
         const pages = ["../pages/page_one.html", "../pages/page_two.html"];
         pages.forEach((page, pageNumber) => {
             functionality.downloadPDF(form, page, ++pageNumber, options);
