@@ -55,16 +55,6 @@ body {
 /* -----------------------------------
             Global Style
 ------------------------------------- */
-main {
-    height: 95%;
-    width: 80%;
-    background-color: white;
-    border-radius: 2rem;
-    display: grid;
-    position: relative;
-    overflow: hidden;
-    grid-template-columns: 2.5fr 4fr;
-}
 
 .go_left {
     top: 0;
@@ -80,6 +70,12 @@ main {
     transform: translateX(100%);
 }
 
+button {
+    display: flex;
+    align-items: center;
+    font-family: 'hind_regular';
+}
+
 #welcome,
 #instruction,
 #inputs {
@@ -88,6 +84,21 @@ main {
     transition: transform .5s;
     z-index: 1;
 }
+
+/* -----------------------------------
+            Main Area
+------------------------------------- */
+main {
+    height: 95%;
+    width: 80%;
+    background-color: white;
+    border-radius: 2rem;
+    display: grid;
+    position: relative;
+    overflow: hidden;
+    grid-template-columns: 2.5fr 4fr;
+}
+
 
 /* -----------------------------------
             Sidebar Style
@@ -145,6 +156,85 @@ main {
     font-family: sans-serif;
 }
 
+
+/* -----------------------------------
+            Instruction Style
+------------------------------------- */
+#instruction {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    overflow-y: scroll;
+    background-image: url("../img/texture.svg");
+
+}
+
+#instruction::-webkit-scrollbar {
+    display: none;
+}
+
+#instruction_title {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--color-primary);
+    font-family: 'hind_bold', sans-serif;
+}
+
+#instruction_boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.instruction_box {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    border: 1px solid var(--color-border);
+}
+
+.box_number {
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed var(--color-border);
+    border-radius: 50%;
+    background-color: rgba(68, 68, 255, 0.075);
+    margin-bottom: 1rem;
+    font-family: 'hind_bold',
+        sans-serif;
+}
+
+.box_title {
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    opacity: .7;
+    color: #3c37ff;
+}
+
+#instruction_button {
+    padding: 1rem 5rem;
+    background-color: var(--color-primary);
+    color: white;
+    border: 0;
+    margin-top: 1rem;
+    border-radius: 3rem;
+    transition: padding .5s;
+    font-size: 1.5rem;
+    font-family: "hind_regular";
+}
+
+#instruction_button:hover {
+    padding: 1rem 4rem;
+    background-color: #3e37ffd2;
+}
+
 /* -----------------------------------
             Sidebar Style end
 ------------------------------------- */
@@ -177,6 +267,15 @@ form {
     background: linear-gradient(90deg, rgba(255, 255, 255, 1) 30%, rgba(0, 213, 255, 0.062) 100%);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--color-border);
+}
+
+.section_title {
+    color: var(--color-primary);
+}
+
+.section_desc {
+    color: #000000;
+    opacity: .8;
 }
 
 .all_inputs {
@@ -222,11 +321,20 @@ form {
 
 .button {
     border: 0;
-    padding: 1rem 2rem;
-    border-radius: 2rem;
+    padding: 1rem 3rem;
+    border-radius: 5rem;
 }
 
 #button_download {
     background-color: var(--color-primary);
     color: white;
+    transition: padding .5s;
+}
+
+#button_download:hover {
+    padding: 1rem 2rem;
+}
+
+.button_icon {
+    margin-left: 1rem;
 }

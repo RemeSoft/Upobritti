@@ -7,6 +7,7 @@
     <title>UpoBritti</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responseive.css">
+    <link rel="stylesheet" href="css/vandor/bootstrap_icon.css">
 </head>
 
 <body>
@@ -32,7 +33,33 @@
                 <button id="welcome_button" type="button">Continue</button>
             </div>
             <div id="instruction" class="go_right">
-                <button id="instruction_button" type="button">Continue</button>
+                <h2 id="instruction_title">নির্দেশনা সমূহ</h2>
+                <div id="instruction_boxes">
+                    <div class="instruction_box">
+                        <div class="box_number">১</div>
+                        <p class="box_desc">আবেদনকারী শিক্ষার্থী অত্যন্ত সতর্কতার সাথে তত্ত্বের সঠিকতার নিশ্চিত হয়ে
+                            ফর্ম পূরণ করবেন ।</p>
+                    </div>
+                    <div class="instruction_box">
+                        <div class="box_number">২</div>
+                        <p class="box_desc">জন্ম সনদের নম্বর, মোবাইল নম্বর, ফলাফল , পোস্ট কোড, ফলাফল (জিপিএ) ইত্যাদি
+                            ফিল্ড গুলুতে অবশ্যই ইংরেজি নম্বর ব্যবহার করতে হবে।</p>
+                    </div>
+                    <div class="instruction_box">
+                        <div class="box_number">৩</div>
+                        <p class="box_desc">MSI সফটওয়্যার এর সাহায্যে পেমেন্ট সম্পন্ন হবে বিদায় সকল ক্ষেত্রে তথ্য
+                            এন্ট্রি নির্ভুল হওয়া বাঞ্ছনী</p>
+                    </div>
+                    <div class="instruction_box">
+                        <div class="box_number">৪</div>
+                        <p class="box_desc">
+                            ফর্ম টি পূরণ করে ডাউনলোড বাটন-এ ক্লিক করার সাথে সাথে ২টি পেজ ডাউনলোড হব। সেগুলু প্রিন্ট করে
+                            প্রতিষ্টানে জমা দিতে হব।
+                        </p>
+                    </div>
+                </div>
+                <button id="instruction_button" type="button">চালিয়ে যান</button>
+
             </div>
             <div id="inputs" class="go_right">
                 <div id="inputs_area">
@@ -421,7 +448,8 @@
                 </div>
                 <div id="buttons_area">
                     <button type="button" class="button">Back</button>
-                    <button type="button" class="button" id="button_download">Download</button>
+                    <button type="button" class="button" id="button_download">ডউনলোড<span class="button_icon"><img
+                                src="./img/icon_download.svg" alt=""></span></button>
                 </div>
             </div>
         </form>

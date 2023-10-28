@@ -21,6 +21,28 @@
         position: absolute;
     }
 
+    #instruction {
+        padding: 1rem;
+        display: block;
+        overflow-y: scroll;
+    }
+
+    #instruction_title {
+        text-align: center;
+    }
+
+    #instruction_boxes {
+        grid-template-columns: 1fr;
+    }
+
+    #instruction_button {
+        display: block;
+        margin: auto;
+        width: 100%;
+        padding: 1rem 0;
+        margin-top: 1rem;
+    }
+
     #sidebar_button {
         display: block;
     }
