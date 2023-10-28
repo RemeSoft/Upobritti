@@ -423,6 +423,55 @@
                     </section>
                     <section>
                         <div class="section_heading">
+                            <h3 class="section_title">যোগ্যতার শর্ত এবং সংযুক্তি</h3>
+                            <p class="section_desc">ফরমে চাওয়া প্রতিটি তথ্য দিয়ে পরবর্তী ধাপে যান।</p>
+                        </div>
+                        <div class="all_inputs">
+                            <div class="input_group">
+                                <label for="edu_cost_bearer">পড়াশুনা খরচ বহন করবে কে?</label>
+                                <select id="edu_cost_bearer" name="edu_cost_bearer" class="input" required>
+                                    <option value="পিতা&check;/মাতা/অভিভাবক">পিতা</option>
+                                    <option value="পিতা/মাতা&check;/অভিভাবক">মাতা</option>
+                                    <option value="পিতা/মাতা/অভিভাবক&check;">অভিভাবক</option>
+                                </select>
+                            </div>
+                            <div class="input_group">
+                                <label for="minority">আবেদনকারী কি বাংলাদেশের কোনও ক্ষুদ্র নৃ-গোষ্ঠিীর</label>
+                                <select id="minority" name="minority" class="input" required>
+                                    <option value="হ্যাঁ&check;/না">হ্যাঁ</option>
+                                    <option value="হ্যাঁ/না&check;">না</option>
+                                </select>
+                            </div>
+                            <div class="input_group">
+                                <label for="Freedom_fighters">আবেদনকারী কি মুক্তিযোদ্ধা পরিবারের সন্তান (মুক্তিযোদ্ধা
+                                    প্রজন্ম)?</label>
+                                <select id="Freedom_fighters" name="Freedom_fighters" class="input" required>
+                                    <option value="হ্যাঁ&check;/না">হ্যাঁ</option>
+                                    <option value="হ্যাঁ/না&check;">না</option>
+                                </select>
+                            </div>
+                            <div class="input_group">
+                                <label for="another_stipand_source">আবেদনকারী কি অন্য কোন উৎস হতে বৃত্তি/উপবৃত্তি
+                                    পান?</label>
+                                <select id="another_stipand_source" name="another_stipand_source" class="input"
+                                    required>
+                                    <option value="হ্যাঁ&check;/না">হ্যাঁ</option>
+                                    <option value="হ্যাঁ/না&check;">না</option>
+                                </select>
+                            </div>
+                            <div class="input_group">
+                                <label for="physical_disability">আবেদনকারীর কি কোন শারীরিক প্রতিবন্ধকতা আছে?</label>
+                                <select id="physical_disability" name="physical_disability" class="input" required>
+                                    <option value="হ্যাঁ&check;/না">হ্যাঁ</option>
+                                    <option value="হ্যাঁ/না&check;">না</option>
+                                </select>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section>
+                        <div class="section_heading">
                             <h3 class="section_title">পেমেন্ট বিবরণ</h3>
                             <p class="section_desc">ফরমে চাওয়া প্রতিটি তথ্য দিয়ে পরবর্তী ধাপে যান।</p>
                         </div>
@@ -447,7 +496,7 @@
                     </section>
                 </div>
                 <div id="buttons_area">
-                    <button type="button" class="button">Back</button>
+                    <button type="button" class="button">পূর্ববর্তী</button>
                     <button type="button" class="button" id="button_download">ডউনলোড<span class="button_icon"><img
                                 src="./img/icon_download.svg" alt=""></span></button>
                 </div>
