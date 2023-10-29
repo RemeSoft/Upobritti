@@ -102,6 +102,30 @@ async function downloadPDF(form, page, pageNumber, options) {
     }
 }
 
+async function generatePDF(page, options) {
+    window.jsPDF = window.jspdf.jsPDF;
+    const doc = new jsPDF({
+        format: 'a4',
+        margin: 10,
+    });
+    const parser = new DOMParser();
+
+
+    await fetch(page).then(async pdf => {
+        const content = await pdf.text();
+        const html = parser.parseFromString(content, 'text/html');
+        doc.html(html.body, {
+            callback: function (doc) {
+                // Save the PDF
+                doc.save('upobritti.pdf');
+            },
+            width: 170, //target width in the PDF document
+            windowWidth: 650 //window width in CSS pixels
+        });
+
+    })
+}
+
 // check empty
 function isEmpty(form, check) {
     const information = new FormData(form);
@@ -163,5 +187,6 @@ export {
     isEmpty,
     waringRemover,
     showOthers,
-    othersHandler
+    othersHandler,
+    generatePDF
 }
